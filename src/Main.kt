@@ -1,3 +1,3 @@
 fun main() {
-    req1()
+    req2()
 }
