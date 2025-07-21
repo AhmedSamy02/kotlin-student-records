@@ -1,5 +1,10 @@
 fun above60(scores: Map<String, Int>) {
-    scores.filter { it.value >= 60 && !it.key.isEmpty() }.forEach { (key, value) -> println("$key: $value") }
+    val filteredScores = scores.filter { it.value >= 60 && !it.key.isEmpty() }
+    if (filteredScores.isEmpty()) {
+        println("There's no students scores above 60")
+    } else {
+        filteredScores.forEach { (key, value) -> println("$key: $value") }
+    }
 }
 
 fun req5() {
